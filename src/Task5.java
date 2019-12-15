@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input a: ");
+        System.out.print("Input number: ");
         String a = in.nextLine();
         int b = Integer.parseInt(a);
         System.out.println(b + "*1=" + b);

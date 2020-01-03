@@ -3,13 +3,16 @@ import java.util.Scanner;
 public class Task6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("X=");
+        System.out.print("X=");
         int x = scan.nextInt();
-        System.out.println("Y=");
+        System.out.print("Y=");
         int y = scan.nextInt();
-        System.out.println("Z=");
+        System.out.print("Z=");
         int z = scan.nextInt();
         int sum = (x + y + z)/3;
-        System.out.print("Sum: " + sum);
-    }
+        System.out.println("Sum: " + sum);
+        int sum2 = sum/2;
+        if(sum2 > 3)
+            System.out.println("Программа выполнена корректно");
+        }
 }

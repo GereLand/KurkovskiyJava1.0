@@ -21,9 +21,8 @@ public class Task10 {
             e = 1;
             c++;
         }
-        int d = 0;
-        for (int a = 0; a < x; a++) {
-            System.out.println(massiv[a][d] * 3);
+        for (int j = 0; j < y; j++) {
+            System.out.println(massiv[0][j] * 3);
         }
     }
 }

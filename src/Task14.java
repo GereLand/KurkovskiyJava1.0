@@ -8,12 +8,13 @@ public class Task14 {
         int x = 0;
         try {
             x = Integer.parseInt(s);
-        } catch (NumberFormatException e) {
+            double y = x;
+            System.out.println(s);
+            System.out.println(x);
+            System.out.println(y);
+        }
+        catch (NumberFormatException e) {
             System.err.println("Неверный формат строки!");
         }
-        double y = x;
-        System.out.println(s);
-        System.out.println(x);
-        System.out.println(y);
     }
 }

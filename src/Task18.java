@@ -4,34 +4,35 @@ public class Task18 {
     public static void main(String[] args) {
         String allGP1;
         int st = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader("src/Task18-1.txt")))
-        {
-            while ((allGP1 = br.readLine()) != null, st++) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/Task18-1.txt"))) {
+            while ((allGP1 = br.readLine()) != null) {
                 System.out.println(allGP1);
+                st++;
             }
-            System.out.println(st)
-        }
-        catch (IOException exc) {
+        } catch (IOException exc) {
             System.out.println("Ошибка ввода-вывода: " + exc);
         }
         String text;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Для завершения ввода текст введите слово 'Флюгегехаймен' ");
-        System.out.println("Можете начать ввод текста: ");
-        for (int fin = st) //Составить цикл с количеством строк
+        System.out.println("Введите изменения для вышеуказанного текста: ");
+        int y = 1;
         try (FileWriter fw = new FileWriter("src/Task18-1.txt")) {
-            do {
-                System.out.print("- ");
-                text = br.readLine ();
-                if (text.compareTo("Флюгегехаймен") == 0) break;
-                text = text + "\r\n";
-                fw.write(text);
+            for (int fin = 0; fin < st; fin++) {
+                System.out.print(y + "- ");
+                text = br.readLine();
+                fw.write(text + "\r\n");
+                y++;
             }
-            while(text.compareTo("Флюгегехаймен") != 0);
-        }
-        catch (IOException exc) {
+        } catch (IOException exc) {
             System.out.println("Ошибка ввода-вывода: " + exc);
         }
+        String gpnew;
+        try (BufferedReader br2 = new BufferedReader(new FileReader("src/Task18-1.txt"))) {
+            while ((gpnew = br2.readLine()) != null) {
+                System.out.println(gpnew);
+            }
+        } catch (IOException exc) {
+            System.out.println("Ошибка ввода-вывода: " + exc);
         }
     }
 }

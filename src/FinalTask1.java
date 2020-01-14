@@ -11,6 +11,6 @@ public class FinalTask1 {
             n = n / 10;
             binary++;
         }
-        System.out.printf("Число в десятичном формате:\n%d", binary);
+        System.out.print("Число в десятичном формате: " + binary);
     }
 }

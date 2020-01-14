@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class FinalTask2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+        System.out.print("Введите размер массива: ");
         int size = scanner.nextInt();
         int[] arr = new int[size];
-        System.out.println("Введите элементы массива:");
+        System.out.println("Введите элементы массива: ");
         for (int i = 0; i < size; i++) {
             arr[i] = scanner.nextInt();
         }
-        System.out.println("Введенный массив:");
+        System.out.print("Введенный массив: ");
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -23,7 +23,7 @@ public class FinalTask2 {
                 }
             }
         }
-        System.out.println("\nМассив после сортировки:");
+        System.out.print("\nМассив после сортировки: ");
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
         }

@@ -9,9 +9,9 @@ public class Task6 {
         int y = scan.nextInt();
         System.out.print("Z=");
         int z = scan.nextInt();
-        int sum = (x + y + z)/3;
+        double sum = (x + y + z)/3.0;
         System.out.println("Sum: " + sum);
-        int sum2 = sum/2;
+        double sum2 = sum/2;
         if(sum2 > 3)
             System.out.println("Программа выполнена корректно");
         }

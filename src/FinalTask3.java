@@ -1,0 +1,2 @@
+public class FinalTask3 {
+}

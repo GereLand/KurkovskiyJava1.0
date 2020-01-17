@@ -5,12 +5,12 @@ public class Kalkulator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите свой вес: ");
-        double a = in.nextDouble();
+        double weight = in.nextDouble();
         System.out.print("Введите свой рост: ");
-        double b = in.nextDouble();
-        b = b / 100;
-        b = b * b;
-        String fornatedDouble = new DecimalFormat("#0.0").format(a / b);
+        double height = in.nextDouble();
+        height = height / 100;
+        height = height * height;
+        String fornatedDouble = new DecimalFormat("#0.0").format(weight / height);
         System.out.println("Ваш ИМТ = " + fornatedDouble);
     }
 }
